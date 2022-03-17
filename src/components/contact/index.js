@@ -9,7 +9,7 @@ export default function Contact() {
         second="Leave Us A Message"
         desc="We'll respond as soon as possible."
       />
-      <div className="sm:w-2/5 w-full mx-auto mt-12">
+      <div className="sm:w-3/4 w-full mx-auto mt-12 lg:w-1/2">
         <form className="space-y-14">
           <div className="block">
             <label

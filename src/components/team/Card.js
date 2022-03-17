@@ -14,7 +14,6 @@ export default function Card({ team }) {
             src={`${team.imageUrl}`}
             width={400}
             height={400}
-            // layout="responsive"
             alt={`${team.name}`}
             className="object-cover rounded-full"
           />
@@ -23,7 +22,7 @@ export default function Card({ team }) {
               <Link href={value.link} key={i}>
                 <a
                   target="_blank"
-                  className={`bg-primary p-5 absolute rounded-full text-white z-30 bottom-32 -right-8`}
+                  className={`bg-primary p-5 md:p-3 absolute rounded-full text-white z-30 bottom-32 md:bottom-20 md:-right-5 -right-8`}
                 >
                   <Linked />
                 </a>
@@ -33,7 +32,7 @@ export default function Card({ team }) {
         <button
           aria-label="Plus"
           onClick={() => setOpen(!open)}
-          className={`absolute bg-primary p-7 rounded-full text-white  bottom-3 right-6 ${
+          className={`absolute bg-primary p-7 md:p-5  rounded-full text-white  bottom-3 right-6 ${
             open && "bg-second"
           }`}
         >

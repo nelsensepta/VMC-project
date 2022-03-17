@@ -28,11 +28,11 @@ export default function Navbar() {
   return (
     <header
       className={`top-0 inset-x-0 fixed z-50 bg-white transition-all  duration-500  ${
-        isScrolled ? "sm:bg-black" : "sm:bg-black/0"
+        isScrolled ? "md:bg-black" : "md:bg-black/0"
       }`}
     >
-      <nav className="container grid grid-cols-6 grid-flow-col py-1 items-center sm:relative">
-        <div className="sm:col-span-0 col-span-1 flex justify-start items-center">
+      <nav className="container grid grid-cols-6 grid-flow-col py-1 items-center md:relative">
+        <div className="md:col-span-0 col-span-1 flex justify-start items-center">
           <Link href="/">
             <a>
               <Logo className="w-20 lg:w-32" />
@@ -42,7 +42,7 @@ export default function Navbar() {
         <ul
           className={`${
             canvas ? "left-0" : "-left-full"
-          } absolute top-0 w-full text-white bg-black/90 sm:bg-transparent sm:h-auto sm:static sm:flex flex col-start-2 col-span-4 justify-center items-center gap-12 flex-col sm:flex-row text-md h-screen p-5 duration-400 transition-all`}
+          } absolute top-0 w-full text-white bg-black/90 md:bg-transparent md:h-auto md:static md:flex flex col-start-2 md:col-span-5 lg:col-span-4 gap-12 justify-center items-center md:gap-7 xl:gap-15 flex-col md:flex-row text-md h-screen p-5 duration-400 transition-all`}
         >
           <hr className="w-full border-t-2 border-primary text-blue-300  md:hidden" />
           {menus &&
@@ -60,14 +60,15 @@ export default function Navbar() {
           <li>
             <button
               aria-label="button-close"
-              className="sm:hidden absolute top-4 right-4 text-white"
+              className="md:hidden absolute top-4 right-4 text-white"
               onClick={() => setCanvas(false)}
             >
               <Cross />
             </button>
           </li>
+          <hr className="w-full border-t-2 border-primary text-blue-300  md:hidden" />
         </ul>
-        <div className="sm:hidden col-span-1 col-start-6 flex items-center justify-end">
+        <div className="md:hidden col-span-1 col-start-6 flex items-center justify-end">
           <button
             aria-label="menu"
             className="w-12"

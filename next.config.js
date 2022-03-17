@@ -12,7 +12,7 @@ module.exports = withPWA({
     dest: "public",
     register: true,
     // disable: prod ? false : true,
-    disable: false,
+    disable: true,
     runtimeCaching,
   },
   images: {

@@ -31,14 +31,7 @@ module.exports = {
         DEFAULT: "1rem",
         sm: "1rem",
         lg: "2rem",
-        xl: "2rem",
-        "2xl": "3rem",
       },
-      // screens: {
-      //   lg: "1124px",
-      //   xl: "1124px",
-      //   "2xl": "1124px",
-      // },
     },
   },
   variants: {
