@@ -3,6 +3,7 @@ const runtimeCaching = require("next-pwa/cache");
 const prod = process.env.NODE_ENV === "production";
 
 module.exports = withPWA({
+  target: "serverless",
   reactStrictMode: true,
   // Src Folder
   compilerOptions: {
@@ -11,8 +12,7 @@ module.exports = withPWA({
   pwa: {
     dest: "public",
     register: true,
-    // disable: prod ? false : true,
-    disable: true,
+    disable: prod ? false : true,
     runtimeCaching,
   },
   images: {
