@@ -18,7 +18,7 @@ export default function Works({ works }) {
       {open && (
         <Modal open={open} setOpen={setOpen}>
           <div className="flex bg-white sm:justify-center justify-start sm:items-center  overflow-hidden rounded-xl gap-0 sm:gap-5 sm:flex-row flex-col">
-            <div className="sm:w-1/2 w-full">
+            <div className="sm:w-1/2 w-full h-72">
               <Image
                 src={`${selected.imageUrl}`}
                 className="object-cover cursor-pointer"
