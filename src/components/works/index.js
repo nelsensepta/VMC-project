@@ -32,7 +32,9 @@ export default function Works({ works }) {
             </div>
             <div className="sm:w-1/2 w-full text-black flex flex-col justify-start sm:gap-20 sm:pr-5 h-full p-5 gap-5">
               <span className="text-3xl font-semibold">{selected.name}</span>
-              <span className="text-xl ">{selected.description}</span>
+              <span className="text-xl hidden md:block">
+                {selected.description}
+              </span>
             </div>
             <button
               className="absolute right-5 top-5 text-white sm:text-black"

@@ -22,7 +22,7 @@ export default function Card({ team }) {
               <Link href={value.link} key={i}>
                 <a
                   target="_blank"
-                  className={`bg-primary p-5 md:p-3 absolute rounded-full text-white z-30 bottom-46 md:bottom-20 md:-right-5 -right-16`}
+                  className={`bg-primary p-5 md:p-3 absolute rounded-full text-white z-30 bottom-46 md:bottom-20 md:-right-5 -right-10`}
                 >
                   <Linked />
                 </a>
